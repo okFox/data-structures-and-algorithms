@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/okFox/data-structures-and-algorithms/issues"
   },
-  "homepage": "https://github.com/okFox/data-structures-and-algorithms#readme"
+  "homepage": "https://github.com/okFox/data-structures-and-algorithms#readme",
+  "dependencies": {}
 }
