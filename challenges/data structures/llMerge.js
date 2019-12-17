@@ -127,7 +127,15 @@ class LinkedList {
 //merge ll2 into ll1 zipper style
 let ll1current = ll1.head;
 let ll2current = ll2.head;
- while(ll1current.next != null && ll2current.next != null) 
+let nextUp = ll1.head.next.value;
+ll1.head.next = ll2.head
+ while(nextUp.next != null) 
+    
+
+
+
+
+
 
 
   }
