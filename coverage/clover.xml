@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576037357774" clover="3.2.0">
-  <project timestamp="1576037357774" name="All files">
-    <metrics statements="93" coveredstatements="86" conditionals="28" coveredconditionals="22" methods="13" coveredmethods="12" elements="134" coveredelements="120" complexity="0" loc="93" ncloc="93" packages="2" files="3" classes="3"/>
+<coverage generated="1576709122699" clover="3.2.0">
+  <project timestamp="1576709122699" name="All files">
+    <metrics statements="116" coveredstatements="98" conditionals="34" coveredconditionals="25" methods="22" coveredmethods="18" elements="172" coveredelements="141" complexity="0" loc="116" ncloc="116" packages="2" files="4" classes="4"/>
     <package name="challenges">
       <metrics statements="18" coveredstatements="18" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
       <file name="array-binary-search.js" path="/Users/sarahmayfield/alchemy/career-track/data-structures-and-algorithms/challenges/array-binary-search.js">
@@ -30,7 +30,7 @@
       </file>
     </package>
     <package name="challenges.data structures">
-      <metrics statements="75" coveredstatements="68" conditionals="20" coveredconditionals="15" methods="11" coveredmethods="10"/>
+      <metrics statements="98" coveredstatements="80" conditionals="26" coveredconditionals="18" methods="20" coveredmethods="16"/>
       <file name="linkedList.js" path="/Users/sarahmayfield/alchemy/career-track/data-structures-and-algorithms/challenges/data structures/linkedList.js">
         <metrics statements="75" coveredstatements="68" conditionals="20" coveredconditionals="15" methods="11" coveredmethods="10"/>
         <line num="3" count="51" type="stmt"/>
@@ -108,6 +108,32 @@
         <line num="121" count="23" type="stmt"/>
         <line num="123" count="6" type="stmt"/>
         <line num="127" count="1" type="stmt"/>
+      </file>
+      <file name="queue-with-stacks.js" path="/Users/sarahmayfield/alchemy/career-track/data-structures-and-algorithms/challenges/data structures/queue-with-stacks.js">
+        <metrics statements="23" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="9" coveredmethods="6"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="37" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="40" count="6" type="stmt"/>
+        <line num="45" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="56" count="6" type="stmt"/>
+        <line num="57" count="6" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
       </file>
     </package>
   </project>
