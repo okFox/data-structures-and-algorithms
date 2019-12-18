@@ -28,32 +28,36 @@ class AnimalShelter {
       this.front = node;
       this.last = node;
     } else {
-      this.last = node;
+      this.last.next = node;
     }
-
-    dequeue(pref = null) {
-        if(!pref) {
-            const popped = this.front.value
-            this.front = this.front.next
-            return popped;
-        } else {
-            let current = this.front;
-            while(current.next.value !== pref) {
-                current = current.next
-                if(!current.next) {
-                    return 'sorry, no animal for you'
-                }
-            }
-            const found = current.next
-            current.next = found.next
-            return found;
-
-
-            }
+    return node;
+  }
+  dequeue(pref = null) {
+    if(!pref) {
+      const popped = this.front.value;
+      this.front = this.front.next;
+      return popped;
+    } else {
+      let current = this.front;
+      while(current.next.value !== pref) {
+        current = current.next;
+        if(!current.next) {
+          return 'sorry, no animal for you';
         }
+      }
+      const found = current.next;
+      current.next = found.next;
+      return found;
+
 
     }
   }
+}
+
+module.exports = {
+  AnimalShelter,
+  Node
+};
 
 
 
