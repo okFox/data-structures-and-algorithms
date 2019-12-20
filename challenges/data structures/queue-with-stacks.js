@@ -1,12 +1,12 @@
 class Node {
-  constructor(value, next = null) {
+  constructor(value) {
     this.value = value;
     this.next = next;
   }
 }
   
 class Stack {
-  constructor(value = null) {
+  constructor(value) { //maybe you can remove null?  should always have value for later checks
     this.top = new Node(value);
   }
   
@@ -23,7 +23,6 @@ class Stack {
   peek() { 
     return this.top;
   }
-
 }
 
 class PseudoQueue {
@@ -34,7 +33,7 @@ class PseudoQueue {
 
   //which inserts value into the PseudoQueue, using a first-in, first-out approach.
   enqueue(value) {
-    if(this.pullStack !== null){
+    if(this.pullStack.top !== null){
       this.resetStacks();
     }
     this.pushStack.push(value);
@@ -42,21 +41,22 @@ class PseudoQueue {
 
   //which inserts value into the PseudoQueue, using a first-in, first-out approach.
   dequeue() {
-    if(this.pullStack.peek() !== null) {
-      return (this.pullStack.top).pop();
-    } else {
-      while(this.next !== null) {
-        this.pushStack.top = this.pullStack.top; 
-      }
-      return (this.pullStack.top).pop();
-    }
+    if(this.pullStack.peek() !== null) { //if there is still something in the pullstack
+      return (this.pullStack).pop();
+    } else {                                    //when pullstack is empty, push everything from pushstack to pullstack and return top of pushstack
+      let current = this.pushStack.top;
+      while(current.value !== null) {
+        let jump = this.pushStack.pop();
+        this.pullStack.push(jump); 
+        return (this.pushStack).pop();
+      }}
   }
 
   resetStacks() {
-    let current = this.pullStack.top;
+    let current = this.pushStack.top;
     while(current.next !== null) {
-      this.pullstack.top.pop();
-      this.pushStack.push();
+      let jump = this.pushStack.pop();
+      this.pullStack.push(jump);
     } 
   }
 }
