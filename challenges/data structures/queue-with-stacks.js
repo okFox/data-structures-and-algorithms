@@ -6,7 +6,7 @@ class Node {
 }
   
 class Stack {
-  constructor(value) { //maybe you can remove null?  should always have value for later checks
+  constructor(value) {
     this.top = value ? new Node(value) : null;
   }
   
@@ -29,17 +29,16 @@ class Stack {
 
 class PseudoQueue {
   constructor(value) {
-    this.pushStack = new Stack(value); //what if you created both stacks with very first value?
+    this.pushStack = new Stack(value);
     this.pullStack = new Stack(null);
   }
-  //which inserts value into the PseudoQueue, using a first-in, first-out approach.
+
   enqueue(value) {
     this.pushStack.push(value);
   }
 
-  //which inserts value into the PseudoQueue, using a first-in, first-out approach.
   dequeue() {
-    if(this.pullStack.top !== null) { //if there is still something in the pullstack
+    if(this.pullStack.top !== null) { 
       return this.pullStack.pop();
     } else {    
       while(this.pushStack.top !== null) {
