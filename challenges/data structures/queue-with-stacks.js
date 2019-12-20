@@ -32,13 +32,8 @@ class PseudoQueue {
     this.pushStack = new Stack(value); //what if you created both stacks with very first value?
     this.pullStack = new Stack(null);
   }
-
   //which inserts value into the PseudoQueue, using a first-in, first-out approach.
   enqueue(value) {
-    // if(this.pullStack.top !== null){
-      
-    //   this.resetStacks();
-    // }
     this.pushStack.push(value);
   }
 
@@ -49,28 +44,14 @@ class PseudoQueue {
     } else {    
       while(this.pushStack.top !== null) {
         let jump = this.pushStack.pop();
-        this.pullStack.push(jump);
-      //when pullstack is empty, push everything from pushstack to pullstack and return top of pushstack
-      // let current = this.pushStack.top;
-      // while(current.value !== null) {
-      //   let jump = this.pushStack.pop();
-      //   this.pullStack.push(jump); 
-      // }
-      
+        this.pullStack.push(jump);      
+      }
+      return this.pullStack.pop();
     }
-    return this.pullStack.pop();
   }
-
-  // resetStacks() {
-  //   //this fills up the pullStack again and now the nodes are in the right order
-
-  //   while(this.pushStack.top !== null) {
-  //     let jump = this.pushStack.pop();
-  //     this.pullStack.push(jump);
-  //   } 
-  // }
 }
 
 
-module.exports = { PseudoQueue,
+module.exports = {
+  PseudoQueue,
   Node, Stack };

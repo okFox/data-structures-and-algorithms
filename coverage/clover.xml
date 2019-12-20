@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576883992737" clover="3.2.0">
-  <project timestamp="1576883992737" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1576884109489" clover="3.2.0">
+  <project timestamp="1576884109489" name="All files">
+    <metrics statements="20" coveredstatements="18" conditionals="5" coveredconditionals="4" methods="8" coveredmethods="7" elements="33" coveredelements="29" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
+    <file name="queue-with-stacks.js" path="/Users/sarahmayfield/alchemy/career-track/data-structures-and-algorithms/challenges/data structures/queue-with-stacks.js">
+      <metrics statements="20" coveredstatements="18" conditionals="5" coveredconditionals="4" methods="8" coveredmethods="7"/>
+      <line num="3" count="9" type="stmt"/>
+      <line num="4" count="9" type="stmt"/>
+      <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="6" type="stmt"/>
+      <line num="15" count="6" type="stmt"/>
+      <line num="16" count="6" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="22" count="4" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="32" count="3" type="stmt"/>
+      <line num="33" count="3" type="stmt"/>
+      <line num="37" count="3" type="stmt"/>
+      <line num="42" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="43" count="0" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
+      <line num="46" count="3" type="stmt"/>
+      <line num="47" count="3" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>

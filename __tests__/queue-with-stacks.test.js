@@ -19,11 +19,8 @@ describe('PseudoQueue operation', () => {
     pseudoQueue.enqueue(3);
     pseudoQueue.enqueue(9);
     expect(pseudoQueue.pushStack.top.value).toEqual(9);
-console.log(pseudoQueue.pushStack);
-console.log(pseudoQueue.pullStack);
     expect(pseudoQueue.dequeue()).toEqual(5);
-    console.log(pseudoQueue.pushStack);
-console.log(pseudoQueue.pullStack);
+
 
 
     // expect(pseudoQueue.toString()).toEqual('15 -> 10');
