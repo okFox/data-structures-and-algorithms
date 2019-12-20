@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576805545998" clover="3.2.0">
-  <project timestamp="1576805545998" name="All files">
-    <metrics statements="25" coveredstatements="18" conditionals="5" coveredconditionals="3" methods="9" coveredmethods="9" elements="39" coveredelements="30" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1"/>
+<coverage generated="1576879881279" clover="3.2.0">
+  <project timestamp="1576879881279" name="All files">
+    <metrics statements="26" coveredstatements="17" conditionals="5" coveredconditionals="2" methods="9" coveredmethods="7" elements="40" coveredelements="26" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
     <file name="queue-with-stacks.js" path="/Users/sarahmayfield/alchemy/career-track/data-structures-and-algorithms/challenges/data structures/queue-with-stacks.js">
-      <metrics statements="25" coveredstatements="18" conditionals="5" coveredconditionals="3" methods="9" coveredmethods="9"/>
-      <line num="3" count="9" type="stmt"/>
-      <line num="4" count="9" type="stmt"/>
+      <metrics statements="26" coveredstatements="17" conditionals="5" coveredconditionals="2" methods="9" coveredmethods="7"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="4" count="8" type="stmt"/>
       <line num="10" count="6" type="stmt"/>
-      <line num="14" count="3" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
-      <line num="24" count="1" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="18" count="4" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
       <line num="30" count="3" type="stmt"/>
       <line num="31" count="3" type="stmt"/>
-      <line num="36" count="3" type="cond" truecount="1" falsecount="1"/>
-      <line num="37" count="3" type="stmt"/>
-      <line num="39" count="3" type="stmt"/>
-      <line num="44" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="47" count="0" type="stmt"/>
-      <line num="48" count="0" type="stmt"/>
+      <line num="36" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="38" count="2" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="45" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="46" count="0" type="stmt"/>
       <line num="49" count="0" type="stmt"/>
       <line num="50" count="0" type="stmt"/>
       <line num="51" count="0" type="stmt"/>
-      <line num="56" count="3" type="stmt"/>
-      <line num="57" count="3" type="stmt"/>
-      <line num="58" count="0" type="stmt"/>
-      <line num="59" count="0" type="stmt"/>
-      <line num="65" count="1" type="stmt"/>
+      <line num="52" count="0" type="stmt"/>
+      <line num="54" count="0" type="stmt"/>
+      <line num="60" count="2" type="stmt"/>
+      <line num="61" count="2" type="stmt"/>
+      <line num="62" count="4" type="stmt"/>
+      <line num="63" count="2" type="stmt"/>
+      <line num="64" count="2" type="stmt"/>
+      <line num="70" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
