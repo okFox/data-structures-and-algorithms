@@ -7,29 +7,19 @@ beforeEach(() => {
 });
 
 describe('PseudoQueue operation', () => {
-  it('can instantiate a PseudoQueue with a single node.', () => {
-
+  it('can instantiate a PseudoQueue.', () => {
     expect(pseudoQueue.pushStack.top.value).toEqual(5);
+    expect(pseudoQueue.pullStack.top).toEqual(null);
   });
   it('can enqueue a value', () => {
     pseudoQueue.enqueue(6);
     expect(pseudoQueue.pushStack.top.value).toEqual(6);
   });
-  it('can dequeue a value and manage successive operations', () => {
+  it('can dequeue a value and reorder if needed', () => {
     pseudoQueue.enqueue(3);
     pseudoQueue.enqueue(9);
     expect(pseudoQueue.pushStack.top.value).toEqual(9);
     expect(pseudoQueue.dequeue()).toEqual(5);
-
-
-
-    // expect(pseudoQueue.toString()).toEqual('15 -> 10');
-    // pseudoQueue.enqueue(5);
-    // pseudoQueue.enqueue(4);
-    // pseudoQueue.enqueue(3);
-    // expect(pseudoQueue.toString()).toEqual('3 -> 4 -> 5 -> 15 -> 10');
-    // pseudoQueue.dequeue();
-    // pseudoQueue.dequeue();
-    // expect(pseudoQueue.toString()).toEqual('3 -> 4 -> 5');
+    expect(pseudoQueue.dequeue()).toEqual(3);
   });
 });
